@@ -2,8 +2,8 @@
 
 #include "Monster.h"
 
-class AGoblin : public AMonster
+class ABoar : public AMonster
 {
 public:
-	void Run();
+	void Charge();
 };

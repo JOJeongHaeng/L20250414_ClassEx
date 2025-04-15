@@ -1,15 +1,11 @@
 #pragma once
 
-#include "Transform.h"
-#include "State.h"
+//Player has a Gold.
 
-class APlayer : public ATransform, public AState
+class APlayer
 {
 public:
-	void Attack();
-	int GetMoney();
-	void SetMoney(int money);
-
-private:
-	int Money = 0;
+	int MP;
+	int HP;
+	int Gold;
 };

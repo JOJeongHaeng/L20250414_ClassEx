@@ -1,12 +1,23 @@
 #pragma once
-#include "State.h"
-#include "Transform.h"
-
-class AMonster : public AState, public ATransform
+class AMonster
 {
 public:
 	void Attack();
-	void Move();
-	int Die(int Gold);
-};
+	void Die();
 
+	inline int GetHP()
+	{
+		return HP;
+	}
+
+	inline void SetHP(int Value)
+	{
+		HP = Value;
+	}
+
+protected:
+	int HP;
+	int Gold;
+
+	void Drop();
+};

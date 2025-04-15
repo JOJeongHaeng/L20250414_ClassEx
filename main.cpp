@@ -1,21 +1,20 @@
 #include <iostream>
+#include <vector>
+
+#include "World.h"
+#include "Slime.h"
 #include "Player.h"
-#include "Monster.h"
+#include "Goblin.h"
+#include "Boar.h"
 
 using namespace std;
 
 int main()
 {
-	APlayer* MyPlayer = new APlayer;
-	AMonster* Goblin = new AMonster;
-	AMonster* wildboar = new AMonster;
+	UWorld* MyWorld = new UWorld();
 
-	MyPlayer->SetHP(200);
-	MyPlayer->SetMP(100);
-	
-	Goblin->SetHP(50);
-
-	wildboar->SetMP(100);
+	delete MyWorld;
+	MyWorld = nullptr;
 
 	return 0;
 }

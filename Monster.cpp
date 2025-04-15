@@ -1,16 +1,17 @@
 #include "Monster.h"
 
+
+//Goblin is a Monster.
 void AMonster::Attack()
 {
 
 }
 
-void AMonster::Move()
+void AMonster::Die()
 {
-
+	Drop();
 }
 
-int AMonster::Die(int Gold)
+void AMonster::Drop()
 {
-	return Gold;
 }
